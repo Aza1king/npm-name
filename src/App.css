@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+.names-list {
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  margin: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2{
+  color: aliceblue;
+}
+input {
+  margin-bottom: 10px;
+  padding: 4.7px;
+  margin-right: 10px;
+  background: linear-gradient(to right, #007bff, #00bfff);
+color: aliceblue;
+border: 1px #00bfff;
+
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button {
+  padding: 5px 10px;
+  margin: 2px;
+  background: linear-gradient(to right, #007bff, #00bfff);
   color: white;
+  border: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  transition: background-color 1s ease; 
+  background: linear-gradient(to right, #0f947b, #76b6d6);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  color: aliceblue;
+  margin-bottom: 5px;
+  padding: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg');
+  position: relative; 
+}
+
+.delete-button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+body {
+  background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
